@@ -66,14 +66,13 @@ def resume_library():
         print(f"Error loading resume library: {e}")
 
 while True:
-    user_decision = int(input("\nTo upload your resume to Co-Impact and apply, press 1, \nIf you are a Co-Impact worker press 2: "))
-
-    if user_decision == 1:
+    user_decision = input("\nTo upload your resume to Co-Impact and apply, press 1, \nIf you are a Co-Impact worker press 2: ")
+ 
+    if user_decision == "1":
         import agent
-        user_decision = int(input("\nTo upload your resume to Co-Impact and apply, press 1, \nIf you are a Co-Impact worker press 2: "))
     
     
-    elif user_decision == 2:
+    elif user_decision == "2":
         insert_password = True
 
         while insert_password:
@@ -94,9 +93,9 @@ while True:
 
 
     elif user_decision == "exit":
+        print("Exiting the program.")
         break
 
 
     else:
         print("Invalid input. Please enter 1 or 2.")
-
